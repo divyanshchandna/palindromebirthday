@@ -1,6 +1,6 @@
 var birthdayInput = document.querySelector("#birthday-input");
 var submitBtn = document.querySelector("#submit-btn");
-var outputEl = document.querySelector("#output");
+var output1 = document.querySelector("#output");
 submitBtn.addEventListener("click", submitBtnClickHandler);
 function submitBtnClickHandler() {
   let bdDate = birthdayInput.value;
@@ -13,13 +13,13 @@ function submitBtnClickHandler() {
     };
     var ispalindrome = checkPalindromeForAllDateFormat(date);
     if (ispalindrome) {
-      outputEl.innerText = "Yes it's a Palindrome Date🎊";
+      output1.innerText = "Yes it's a Palindrome Date🎊";
     } else {
       var [ctr, nextDate] = getNextPalindrome(date);
       var [ctd ,prevDate] = getPrevPalindrome(date);
       // var nextPal = getNextPalindrome(date);
       // var closePal = closePalindrome();
-      outputEl.innerText = `Your Next Palindrome Date : ${nextDate.day}-${nextDate.month}-${nextDate.year} you missed by ${ctr} days and Previous Palindrome Date was : ${prevDate.day}-${prevDate.month}-${prevDate.year} you missed by ${ctd} days ago 😞`;
+      output1.innerText = `Your Next Palindrome Date : ${nextDate.day}-${nextDate.month}-${nextDate.year} You missed by ${ctr} days and Previous Palindrome Date was : ${prevDate.day}-${prevDate.month}-${prevDate.year} you missed by ${ctd} days ago 😞`;
     }
   }
 }

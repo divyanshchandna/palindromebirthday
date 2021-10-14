@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+.main-container{
+    display: block;
+    text-align: center;
+}
+h1{
+    margin: 0px;
+}
+.header{
+    padding: 2rem;
+    background-color: #3B82F6;
+}
+#submit-btn{
+    background-color: #3B82F6;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 1rem 2rem;
+}
+.output-div{
+    max-width: 600px;
+
+    margin: auto;
+}
+#output{
+    font-size: larger;
+}
