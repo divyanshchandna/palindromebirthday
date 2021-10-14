@@ -19,7 +19,7 @@ function submitBtnClickHandler() {
       var [ctd ,prevDate] = getPrevPalindrome(date);
       // var nextPal = getNextPalindrome(date);
       // var closePal = closePalindrome();
-      output1.innerText = `Your Next Palindrome Date : ${nextDate.day}-${nextDate.month}-${nextDate.year} You missed by ${ctr} days and Previous Palindrome Date was : ${prevDate.day}-${prevDate.month}-${prevDate.year} you missed by ${ctd} days ago 😞`;
+      output1.innerText = `Your Next Palindrome Date : ${nextDate.day}-${nextDate.month}-${nextDate.year} You missed by ${ctr} days and Previous Palindrome Date was : ${prevDate.day}-${prevDate.month}-${prevDate.year} you missed by ${ctd} days😞`;
     }
   }
 }
